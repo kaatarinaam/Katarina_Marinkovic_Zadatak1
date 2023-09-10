@@ -1,0 +1,105 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+  
+body {
+    background-color: black;
+}
+
+header{
+    /*position: sticky;
+    top: 0;*/
+    position: relative;
+    text-align: left;
+    clear: both;
+    /*overflow: hidden;*/
+    height: 100px;
+    padding-right: 75px;
+    white-space: nowrap;
+    z-index: 999;
+}
+
+#vreme{
+    color: red;
+}
+
+#meni {
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+#meni li {    
+    float: left;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: red;
+    font-size: 15px;
+}
+
+#meni a li{
+    text-decoration: none;
+    color: white;
+}
+
+.menif{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#headerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-wrapper{
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.burger {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .burger-wrapper{
+        display: block;
+    }
+    
+    #headerDiv{
+        flex-direction: column;
+    }
+    
+    .list-item{
+        display: none;
+    }
+}
+
+.visible{
+    display: block;
+    width: 100%;
+}
+
+#poc1 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
+#poc2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#galerija{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

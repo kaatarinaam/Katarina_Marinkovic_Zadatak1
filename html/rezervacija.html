@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija</title>
+    <link rel="stylesheet" href= "/css/rezervacija.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="pocniVremeFunkciju()">
+
+    <header> 
+        <div id="headerDiv">
+            <div id="vremeDiv">
+                <p id="vreme">
+                    Datum: <span id="datum"></span><br>
+                    Vreme: <span id="vremeT"></span>
+                </p>
+            </div>
+
+            <div id="headerText">
+                <h1 id="header">
+                    Bioskop X
+                </h1>
+            </div>
+
+            <div id="naviDiv">        
+                <nav id="navi">
+                    <ul id="meni">
+                        <div class="menif">
+                            <li class="burger-wrapper"><img src="../img/menu.png" alt="" class="burger"></li>
+                            <li class="list-item"><a href="index.html">Početna</a></li>
+                            <li class="list-item"><a href="repertoar.html">Repertoar</a></li>
+                            <li class="list-item"><a href="kontakt.html">Kontakt</a></li>
+                            <li class="list-item"><a href="rezervacija.html">Rezervacija</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="celina">
+        <div id="podaci">
+            <form action="" id="forma" name="forma">
+                <label for="imeprezime">
+                    Ime i Prezime
+                </label>
+                <br>
+                <input type="text" id="imeprezime" name="imeprezime">
+                <br>
+                <label for="imejl">
+                    Email
+                </label>
+                <br>
+                <input type="email" id="imejl" name="imejl">
+                <br>
+                <label for="tel">
+                    Broj Telefona
+                </label>
+                <br>
+                <input type="text" id="tel" name="tel">
+                <br>
+                <label for="film">
+                    Izaberite film:
+                </label>
+                <br>
+                <select name="film" id="film" required>
+                    <option style="display:none"></option>
+                    <option value="Schindler's List">Schindler's List</option>
+                    <option value="Good Will Hunting">Good Will Hunting</option>
+                    <option value="Life is Beautiful">Life is Beautiful</option>
+                    <option value="Cinema Paradiso">Cinema Paradiso</option>
+                    <option value="Heat">Heat</option>
+                    <option value="Forrest Gump">Forrest Gump</option>
+                    <option value="Pulp Fiction">Pulp Fiction</option>
+                    <option value="Interstellar">Interstellar</option>
+                    <option value="Matrix">Matrix</option>
+                    <option value="Jaws">Jaws</option>
+                    <option value="The Godfather">The Godfather</option>
+                    <option value="Goodfellas">Goodfellas</option>
+                </select>
+                <br>
+                <label id="vremeLabel">
+                    Izaberite vreme projekcije:
+                </label>
+                <br>
+                <input type="radio" id="dva" name="time" checked="checked" value="14">
+                <label for="dva" id="dva" class="vreme">14:00</label>
+                <br>
+                <input type="radio" id="cetiri" name="time" value="16">
+                <label for="cetiri" id="cetiri" class="vreme">16:00</label>
+                <br>
+                <input type="radio" id="sest" name="time" value="18">
+                <label for="sest" id="sest" class="vreme">18:00</label>
+                <br>
+                <input type="radio" id="osam" name="time" value="20">
+                <label for="osam" id="osam" class="vreme">20:00</label>
+                <br>
+
+                <label for="karte">
+                    Izaberite broj karata:
+                </label>
+                <br>
+                <input type="number" id="karte" name="karte" min="1" required>
+                <br>
+
+                <button id="potvrdi">
+                    Potvrdi
+                </button>
+            </form>
+
+        </div>
+
+        <div id="cenovnik">
+            <table id="tabela" border = 2>
+
+                <tr>
+                    <td align=center colspan=2><b>Cenovnik</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Broj karata</b></td>
+                    <td><b>Cena po karti</b></td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>1500 din</td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>1250 din</td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>1100 din</td>
+                </tr>
+                
+                <tr>
+                    <td>4+</td>
+                    <td>1000 din</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="/javascript/validacija.js"></script>
+    <script src="/javascript/vreme.js"></script>
+    <script src="/javascript/burger-menu.js"></script>
+</body>
+</html>

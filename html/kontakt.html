@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/kontakt.css">
+    <title>Kontakt</title>
+</head>
+
+<body onload="pocniVremeFunkciju()">
+     <header> 
+         <div id="headerDiv">
+             <div id="vremeDiv">
+                 <p id="vreme">
+                    Datum: <span id="datum"></span><br>
+                    Vreme: <span id="vremeT"></span>
+                 </p>
+             </div>
+
+            <div id="headerText">
+                <h1 id="header">
+                    Bioskop X
+                </h1>
+            </div>
+
+            <div id="naviDiv">        
+                <nav id="navi">
+                    <ul id="meni">
+                        <div class="menif">
+                            <li class="burger-wrapper"><img src="../img/menu.png" alt="" class="burger"></li>
+                            <li class="list-item"><a href="index.html">Početna</a></li>
+                            <li class="list-item"><a href="repertoar.html">Repertoar</a></li>
+                            <li class="list-item"><a href="kontakt.html">Kontakt</a></li>
+                            <li class="list-item"><a href="rezervacija.html">Rezervacija</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div id="container">
+        <div id="kontaktform">
+            Ukoliko imate pitanja i nedoumica popunite formu:
+            <br>
+            <form action="" id="kontakt" name="kontakt" >
+                <label for="imeprezime3">
+                    Ime i Prezime
+                </label>
+                <br>
+                <input type="text" id="imeprezime3" name="imeprezime3">
+                <br>
+                <label for="imejl3">
+                    Email
+                </label>
+                <br>
+                <input type="email" id="imejl3" name="imejl3">
+                <br>
+                <label for="pitanje">
+                    Pitanje
+                </label>
+                <br>
+                <textarea name="" id="pitanje" cols="30" rows="10"> </textarea>
+                <br>
+                <button onclick="proverakontakt()">Pošalji</button>
+                </form>
+
+        </div>
+
+        <div id="adresa">
+            Broj Telefona: +381 11 3950 892
+            <br>
+            Radno Vreme: 12:00-00:00
+            <br>
+        </div>
+
+        <div id="kontaktinfo">
+            <section> Lokacija: Jove Ilića 154, Beograd 11000
+                <br>
+                <div class="mapouter" id="lokacija"><div class="gmap_canvas"><iframe width="362" height="302" id="gmap_canvas" src="https://maps.google.com/maps?q=FON&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:302px;width:362px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:302px;width:362px;}</style></div></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="/javascript/kontakt.js"></script>
+    <script src="/javascript/vreme.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/magnific-popup/magnific-popup.css">
+</head>
+
+<body onload="pocniVremeFunkciju()">
+    <header>
+        <div id="headerDiv">
+            <div id="vremeDiv">
+                <p id="vreme">
+                    Datum: <span id="datum"></span><br>
+                    Vreme: <span id="vremeT"></span>
+                </p>
+            </div>
+            <div id="naviDiv">        
+                <nav id="navi">
+                    <ul id="meni">
+                        <div class="menif">
+                            <li class="burger-wrapper"><img src="../img/menu.png" alt="" class="burger"></li>
+                            <li class="list-item"><a href="index.html">Početna</a></li>
+                            <li class="list-item"><a href="repertoar.html">Repertoar</a></li>
+                            <li class="list-item"><a href="kontakt.html">Kontakt</a></li>
+                            <li class="list-item"><a href="rezervacija.html">Rezervacija</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="poc1">
+        <br>
+        Bioskop X
+    </div>
+
+    <div id="poc2">
+        Dobrodosli na sajt Bioskopa X
+    </div>
+
+    <br>
+
+    <div class="popup-gallery" id="galerija">
+
+        <div class="slika">
+            <a href="../img/sala-bioskopa.jpg" title="Sala Bioskopa">
+                <img src="../img/sala-bioskopa.jpg" alt="Sala Bioskopa" width="450" height="350">
+            </a>
+        </div>
+
+        <div class="slika">
+            <a href="../img/ulaz u bioskop.jpg" title="Ulaz u Bioskop">
+                <img src="../img/ulaz u bioskop.jpg" alt="Ulaz u Bioskop" width="450" height="350">
+            </a>
+        </div>
+
+        <div class="slika">
+            <a href="../img/bioskop-hrana.jpg" title="Štand sa hranom ispred bioskopa">
+                <img src="../img/bioskop-hrana.jpg" alt="Štand sa hranom ispred bioskopa" width="450" height="350">
+            </a>
+        </div>
+
+    </div>
+
+    <script src="/javascript/vreme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/burger-menu.js"></SCRipt:src>
+</body>
+</html>

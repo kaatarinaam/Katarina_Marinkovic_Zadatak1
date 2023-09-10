@@ -1,0 +1,122 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h1{
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    clear: both;
+    padding-top: 20px;
+}
+
+header{     
+    position: relative;
+    text-align: right;
+    clear: both;
+    height: 100px;
+    padding-right: 75px;
+}
+    
+#meni {
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.menif{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#meni li {
+    /*float: left;*/
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: red;
+    font-size: 15px;
+}
+            
+#meni a li{
+    text-decoration: none;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#forma{
+    padding-top: 25px;
+}
+
+#vreme{
+    color: red;
+    text-align: left;
+}
+
+#headerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cenovnik{
+    background-color: white;
+}
+
+#celina{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+#tabela{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.burger-wrapper{
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.burger {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .burger-wrapper{
+        display: block;
+    }
+
+    #headerDiv{
+        flex-direction: column;
+    }
+
+    .list-item{
+        display: none;
+    }
+}
+
+.visible{
+    display: block;
+    width: 100%;
+}

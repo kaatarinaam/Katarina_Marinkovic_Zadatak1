@@ -1,0 +1,145 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    /*background-image: url("../img/pozadina.png");*/
+}
+
+h1{      
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    clear: both;
+    padding-top: 20px;
+}
+
+header{     
+    position: relative;
+    text-align: right;
+    clear: both;
+    height: 100px;
+    padding-right: 75px;
+}
+    
+#meni {
+    list-style-type: none;
+    display: flexbox;
+    justify-content: flex-end;
+}
+
+#meni li {         
+    float: left;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: red;
+    font-size: 15px;
+    
+}
+                
+#meni a li{
+    text-decoration: none;
+    color: white;
+}
+
+.menif{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}  
+
+.film {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /*justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;*/
+    padding: 35px;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.poredak {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
+    padding-top: 25 px;
+}
+
+/*#titl1 {
+    font-size: 30px;
+    color: white;
+}*/
+
+.titlFilma {
+    font-size: 25px;
+    color: red;
+    text-align: left;
+}
+
+#promeniPrvi{
+    background-color: red;
+    border-color: white ;
+    color: #000000;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#dugmeDiv {
+    display: flex;
+    justify-content: center
+}
+
+#vreme{
+    color: red;
+    text-align: left;
+}
+
+#headerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-wrapper{
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.burger {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .burger-wrapper{
+        display: block;
+    }
+
+    #headerDiv{
+        flex-direction: column;
+    }
+
+    .list-item{
+        display: none;
+    }
+}
+
+.visible{
+    display: block;
+    width: 100%;
+}
